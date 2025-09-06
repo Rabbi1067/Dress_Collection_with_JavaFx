@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seu.bd.edu.dress.DressController">
+   <children>
+      <Label layoutX="404.0" layoutY="16.0" text="Dress Collection" textFill="#150fbc" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="534.0" layoutY="95.0" orientation="VERTICAL" prefHeight="469.0" prefWidth="13.0" />
+      <Label layoutX="95.0" layoutY="81.0" prefHeight="20.0" prefWidth="370.0" text="Dress Name: (Jack Hoodie)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="nameField" layoutX="95.0" layoutY="104.0" prefHeight="25.0" prefWidth="391.0" />
+      <Label layoutX="95.0" layoutY="146.0" prefHeight="20.0" prefWidth="272.0" text="Dress Type: (Hoodie/Sweater)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="nameLabel" layoutX="99.0" layoutY="130.0" prefHeight="17.0" prefWidth="391.0" />
+      <ChoiceBox fx:id="typeField" layoutX="94.0" layoutY="165.0" prefHeight="25.0" prefWidth="391.0" />
+      <Label fx:id="typeLabel" layoutX="95.0" layoutY="199.0" prefHeight="17.0" prefWidth="391.0" />
+      <Label layoutX="92.0" layoutY="222.0" prefHeight="17.0" prefWidth="370.0" text="Available Size: (Medium/Large)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="sizeField" layoutX="93.0" layoutY="243.0" prefHeight="25.0" prefWidth="391.0" />
+      <Label fx:id="sizeLabel" layoutX="93.0" layoutY="273.0" prefHeight="17.0" prefWidth="391.0" />
+      <Label layoutX="91.0" layoutY="294.0" prefHeight="17.0" prefWidth="244.0" text="Dress Color:  (White/Black)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ColorPicker fx:id="colorField" layoutX="95.0" layoutY="317.0" prefHeight="25.0" prefWidth="391.0" />
+      <Slider fx:id="priceField" layoutX="91.0" layoutY="396.0" max="5000.0" min="500.0" prefHeight="14.0" prefWidth="399.0" />
+      <Label layoutX="93.0" layoutY="372.0" text="Price: (50-5000)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="colorLabel" layoutX="95.0" layoutY="352.0" prefHeight="17.0" prefWidth="391.0" />
+      <Label layoutX="91.0" layoutY="435.0" text="Dress Details: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextArea fx:id="detailsField" layoutX="91.0" layoutY="465.0" prefHeight="53.0" prefWidth="399.0" />
+      <Label fx:id="detailsLabel" layoutX="91.0" layoutY="523.0" prefHeight="17.0" prefWidth="399.0" />
+      <Label layoutX="622.0" layoutY="94.0" prefHeight="17.0" prefWidth="182.0" text="Last Purchase Date: (2023-12-20)">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="purchaseField" layoutX="622.0" layoutY="126.0" prefHeight="25.0" prefWidth="331.0" />
+      <Label fx:id="purchaseLabel" layoutX="630.0" layoutY="157.0" prefHeight="17.0" prefWidth="331.0" />
+      <Label layoutX="631.0" layoutY="189.0" text="Available Quantity: (0-500)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="quantityField" layoutX="630.0" layoutY="210.0" prefHeight="25.0" prefWidth="331.0" />
+      <Label fx:id="quantityLabel" layoutX="631.0" layoutY="242.0" prefHeight="14.0" prefWidth="331.0" />
+      <Label layoutX="631.0" layoutY="263.0" prefHeight="20.0" prefWidth="206.0" text="Discount Code: (SECRET20)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="discountField" layoutX="630.0" layoutY="288.0" prefHeight="25.0" prefWidth="331.0" />
+      <Label fx:id="discountLabel" layoutX="630.0" layoutY="321.0" prefHeight="17.0" prefWidth="331.0" />
+      <Label layoutX="631.0" layoutY="342.0" prefHeight="20.0" prefWidth="252.0" text="Targated Customer: (Male/Female)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="630.0" layoutY="372.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="customerToggle" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="734.0" layoutY="372.0" mnemonicParsing="false" text="Female" toggleGroup="$customerToggle">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <Label fx:id="customerLabel" layoutX="631.0" layoutY="395.0" prefHeight="17.0" prefWidth="252.0" />
+      <CheckBox fx:id="boostingCheckBox" layoutX="631.0" layoutY="435.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="244.0" text="Enable Fackbook Boosting">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="653.0" layoutY="484.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="35.0" prefWidth="47.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="priceLabel" layoutX="91.0" layoutY="418.0" prefHeight="17.0" prefWidth="399.0" />
+      <Label fx:id="saveLabel" layoutX="614.0" layoutY="523.0" prefHeight="17.0" prefWidth="173.0" />
+      <Button defaultButton="true" layoutX="983.0" layoutY="42.0" mnemonicParsing="false" onAction="#showList" onMouseClicked="#showList" text="Show List">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <Label fx:id="priceValueLabel" layoutX="201.0" layoutY="370.0" prefHeight="17.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="uploadImageView" fitHeight="133.0" fitWidth="97.0" layoutX="905.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="uploadButton" layoutX="935.0" layoutY="489.0" mnemonicParsing="false" onAction="#handleUpload" text="Upload" />
+      <Label fx:id="imageErrorLabel" layoutX="912.0" layoutY="523.0" prefHeight="17.0" prefWidth="143.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+d,T-Shirt,Medium,0xffff00ff,1207,,2025-09-05,2,4,Male,Yes,C:\Users\User\Downloads\download.jpeg
+dv,T-Shirt,Medium,0xff0000ff,1766,,2025-09-05,5,xc55,Female,No,C:\Users\User\Downloads\images (1).jpeg
+dv,Dress,Medium,0x003333ff,2246,,2025-09-05,3,xc55,Male,Yes,C:\Users\User\Downloads\images.jpeg
+dgsg,T-Shirt,Medium,0xff00ffff,1805,,2025-09-03,2,sa,Male,Yes,C:\Users\User\Downloads\images (2).jpeg
+dg,Sweater,Small,0x000080ff,1049,ggf,2025-09-02,1,f,Male,Yes,C:\Users\User\Downloads\images.jpeg
+dg,Sweater,Small,0x000080ff,1049,ggf,2025-09-02,1,f,Male,Yes,C:\Users\User\Downloads\images (1).jpeg
+Hoddie191,Hoodie,Medium,0x000080ff,1049,wcsd,2025-09-01,2,ddd4,Male,Yes,C:\Users\User\Downloads\images.jpeg
+Shorts,Shorts,Small,0xff0000ff,2533,,2025-09-03,14,566ggr,Male,No,C:\Users\User\Downloads\images (2).jpeg
